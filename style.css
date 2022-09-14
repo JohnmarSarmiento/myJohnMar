@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+body {
+    background-color: #181a1a;
+    position: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    text-align: center;
+    padding: 10px 25px;
+    float: left;
+    text-transform: uppercase;
+    font-size: 35px;
+    box-sizing: border-box;
+    
+}
+h1 {
+    display: inline-block;
+    position: absolute;
+}
+.A {
+    
+
+    -webkit-box-reflect: below 1px linear-gradient (transparent,#80cadd);
+}
+.B {
+    color: transparent;
+    animation: animate 7s linear infinite;
+}
+
+
+@keyframes animate {
+    0% {
+        color: white;
+        transform: perspective (250px) rotate(0deg);
+    }
+    30% {
+        color: green;
+        transform: perspective (250px) rotate(30deg);
+    }
+    50% {
+        color: green;
+        transform: perspective (250px) rotate(-50deg);
+        
+    }
+    80% {
+        color: green;
+        transform: perspective (250px) rotate(80deg);
+    }
+    100% {
+        color: blue;
+        transform: perspective(250px) rotate(100deg);
+    }
+}
